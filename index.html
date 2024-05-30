@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guess my number</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="pt-36">
+    <div
+      class="flex flex-col justify-center items-center px-5 py-8 ml-auto shadow-xl bg-slate-300 shadow-yellow-50 mr-auto w-6/12 border-solid border-transparent border-4 rounded-2xl"
+      id="wrapper"
+    >
+      <nav class="flex gap-40 mb-20">
+        <button
+          class="bg-slate-200 border-solid border-black border-2 px-8 py-1 rounded-2xl hover:bg-slate-600 hover:text-white hover:shadow-md hover:shadow-black active:shadow-sm text-2xl flex items-center gap-2"
+          id="again"
+        >
+          <p>Qayta</p>
+          <i class="fa-solid fa-arrows-rotate hover:animate-spin"></i>
+        </button>
+        <h2 class="text-2xl">
+          Guess any number between <b>1</b> and <b>25</b>.
+        </h2>
+      </nav>
+      <div>
+        <div>
+          <h1
+            class="text-6xl font-bold border-solid border-4 border-black text-center py-8 rounded-full mb-20 w-72 mx-auto bg-slate-100"
+            id="commonNumber"
+          >
+            ?
+          </h1>
+        </div>
+        <div class="flex gap-40 items-center">
+          <div class="flex gap-2">
+            <input
+              class="border-solid bg-slate-200 border-2 rounded-xl pl-4 h-10 appearance-none mr-6 border-black placeholder:italic placeholder:text-center bg-inherit text-black font-semibold placeholder:text-black placeholder:opacity-80 text-center"
+              id="input"
+              type="number"
+              name=""
+              placeholder="Your guess number"
+            />
+            <button
+              class="text-xl border-solid border-black border-2 px-8 py-1 rounded-2xl hover:bg-slate-600 hover:text-white bg-slate-200 hover:shadow-md hover:shadow-black active:shadow-sm flex items-center gap-3"
+              id="check"
+            >
+              tekshirish <i class="fa-regular fa-circle-check"></i>
+            </button>
+          </div>
+          <div class="flex-col">
+            <p class="font-semibold" id="keyNumber">Start game : )</p>
+            <div class="flex gap-4">
+              <p class="font-medium">qolgan imkoniyat:</p>
+              <p class="font-bold" id="atemp">8</p>
+            </div>
+            <div class="flex gap-4">
+              <p class="font-medium">Record:</p>
+              <p class="font-bold" id="record">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
